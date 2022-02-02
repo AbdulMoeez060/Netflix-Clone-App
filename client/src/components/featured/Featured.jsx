@@ -1,7 +1,13 @@
 import { InfoOutlined, PlayArrow } from "@material-ui/icons";
+import { useEffect } from "react";
 import "./featured.scss";
 
 function Featured({type}) {
+    useEffect(()=>{
+        const getRandom = async () =>{
+
+        }
+    });
   return (
     <div className="featured">
         { type && (
