@@ -69,7 +69,7 @@ router.get("/", verify, async (req, res) => {
       
   
       try {
-        const users = query ?  await User.find().sort({id:-1}).limit(10) : await User.find();
+        const users = query ?  await User.find().sort({id:-1}).limit(5) : await User.find();
         res.status(200).json(users);
       } catch (err) {
         res.status(500).json(err);
