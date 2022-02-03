@@ -1,6 +1,6 @@
 import React, { useContext, useState } from "react";
-import { AuthContext } from "../../context/authcontext/AuthContext";
-import {login} from "../../context/authcontext/apiCalls"
+import { AuthContext } from "../../context/authContext/AuthContext";
+import {login} from "../../context/authContext/apiCalls"
 
 
 import "./login.css";

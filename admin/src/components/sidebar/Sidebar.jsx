@@ -53,6 +53,12 @@ export default function Sidebar() {
                 Movies
               </li>
             </Link>
+            <Link to="/lists" className="link">
+              <li className="sidebarListItem">
+                <PlayCircleOutline className="sidebarIcon" />
+                List
+              </li>
+            </Link>
             <li className="sidebarListItem">
               <AttachMoney className="sidebarIcon" />
               Transactions
