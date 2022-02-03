@@ -43,10 +43,11 @@ export default function Register() {
 
                 <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/08/Netflix_2015_logo.svg/2560px-Netflix_2015_logo.svg.png" alt="" className="logo" />
                 
-                <button className="loginButton">Sign In</button> 
+                {/* <button className="loginButton">Sign In</button>  */}
                 {/* <Link to="/login" className="link">
                 <span className="loginButton">Login</span>
                 </Link> */}
+                <a className="loginButton" href="/login">Sign In</a> 
             </div>
         </div>
 

@@ -1,6 +1,7 @@
 import { InfoOutlined, PlayArrow } from "@material-ui/icons";
 import axios from "axios";
 import { useEffect, useState } from "react";
+import { Link } from "react-router-dom";
 import "./featured.scss";
 
 function Featured({ type,setGenre }) {
@@ -51,7 +52,9 @@ function Featured({ type,setGenre }) {
                 <div className="buttons">
                     <button className="play">
                         <PlayArrow />
+                        <Link to={{pathname:"/watch",movie:content.video}}>
                         <span>Play</span>
+                        </Link>
                     </button>
                     <button className="more">
                         <InfoOutlined />
