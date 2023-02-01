@@ -15,7 +15,7 @@ const Home = ({ type }) => {
       try {
 
         const res = await axios.get(`lists${type ? "?type=" + type : ""}${genre ? "&genre=" + genre : ""}`,
-          { headers: { token: "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYxZjkxM2ZiZjA4OGE1MDZlZTQ4YzM5MSIsImlzQWRtaW4iOnRydWUsImlhdCI6MTY0MzcyNzg3OCwiZXhwIjoxNjQ0MTU5ODc4fQ.v5GNxzl9eT4HNhkvfPLyXuAUuZpQTxghdRMVLe0mpKo" } });
+          { headers: { token: "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYxZjkxM2ZiZjA4OGE1MDZlZTQ4YzM5MSIsImlzQWRtaW4iOnRydWUsImlhdCI6MTY3NTI4NDA0NSwiZXhwIjoxNjc1NzE2MDQ1fQ.ue92D6HFtLNqUR-aNiWekG2T_hG-kLhzQgOtZKYeGeI" } });
 
         setLists(res.data);
         //console.log(res);
